@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Gallery | Frontend Project</title>
+
+```
+<link rel="stylesheet" href="style.css">
+
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+```
+
+</head>
+<body>
+
+```
+<!-- Loader -->
+<div id="loader">
+    <div class="spinner"></div>
+    <h2>Loading Gallery...</h2>
+</div>
+
+<!-- Main Content -->
+<div class="container">
+
+    <!-- Header -->
+    <header>
+        <h1>✨ Image Gallery</h1>
+        <p>Discover Beautiful Moments Around The World</p>
+
+        <button id="themeToggle">
+            <i class="fa-solid fa-moon"></i>
+        </button>
+    </header>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+
+        <button class="filter-btn active" data-filter="all">
+            All
+        </button>
+
+        <button class="filter-btn" data-filter="nature">
+            Nature
+        </button>
+
+        <button class="filter-btn" data-filter="animals">
+            Animals
+        </button>
+
+        <button class="filter-btn" data-filter="cities">
+            Cities
+        </button>
+
+        <button class="filter-btn" data-filter="travel">
+            Travel
+        </button>
+
+    </div>
+
+    <!-- Gallery -->
+    <div class="gallery">
+
+        <!-- Nature -->
+        <div class="gallery-item nature">
+            <img src="image/nature1.jpg.jpg" alt="Nature">
+            <div class="overlay">Nature 1</div>
+        </div>
+
+        <div class="gallery-item nature">
+            <img src="image/nature2.jpg.jpg" alt="Nature">
+            <div class="overlay">Nature 2</div>
+        </div>
+
+        <div class="gallery-item nature">
+            <img src="image/nature3.jpg.jpg" alt="Nature">
+            <div class="overlay">Nature 3</div>
+        </div>
+
+        <div class="gallery-item nature">
+            <img src="image/nature4.jpg.jpg" alt="Nature">
+            <div class="overlay">Nature 4</div>
+        </div>
+
+        <!-- Animals -->
+        <div class="gallery-item animals">
+            <img src="image/animal1.jpg.jpg" alt="Animal">
+            <div class="overlay">Animal 1</div>
+        </div>
+
+        <div class="gallery-item animals">
+            <img src="image/animal2.jpg.jpg" alt="Animal">
+            <div class="overlay">Animal 2</div>
+        </div>
+
+        <div class="gallery-item animals">
+            <img src="image/animal3.jpg.jpg" alt="Animal">
+            <div class="overlay">Animal 3</div>
+        </div>
+
+        <div class="gallery-item animals">
+            <img src="image/animal4.jpg.jpg" alt="Animal">
+            <div class="overlay">Animal 4</div>
+        </div>
+
+        <!-- Cities -->
+        <div class="gallery-item cities">
+            <img src="image/city1.jpg.jpg" alt="City">
+            <div class="overlay">City 1</div>
+        </div>
+
+        <div class="gallery-item cities">
+            <img src="image/city2.jpg.jpg" alt="City">
+            <div class="overlay">City 2</div>
+        </div>
+
+        <div class="gallery-item cities">
+            <img src="image/city3.jpg.jpg" alt="City">
+            <div class="overlay">City 3</div>
+        </div>
+
+        <div class="gallery-item cities">
+            <img src="image/city4.jpg.jpg" alt="City">
+            <div class="overlay">City 4</div>
+        </div>
+
+        <!-- Travel -->
+        <div class="gallery-item travel">
+            <img src="image/travel1.jpg.jpg" alt="Travel">
+            <div class="overlay">Travel 1</div>
+        </div>
+
+        <div class="gallery-item travel">
+            <img src="image/travel2.jpg.jpg" alt="Travel">
+            <div class="overlay">Travel 2</div>
+        </div>
+
+        <div class="gallery-item travel">
+            <img src="image/travel3.jpg.jpg" alt="Travel">
+            <div class="overlay">Travel 3</div>
+        </div>
+
+        <div class="gallery-item travel">
+            <img src="image/travel4.jpg.jpg" alt="Travel">
+            <div class="overlay">Travel 4</div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox">
+
+    <span class="close">&times;</span>
+
+    <img class="lightbox-img" src="" alt="">
+
+    <div class="counter">
+        1 / 16
+    </div>
+
+    <button class="prev">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+
+    <button class="next">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+</div>
+
+<script src="script.js"></script>
+```
+
+</body>
+</html>
